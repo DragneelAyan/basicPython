@@ -26,7 +26,7 @@ stages:
         containerRegistry: 'basicPython-ACR'
         repository: 'basicPython'
         command: 'build'
-        Dockerfile: '/Dockerfile'
+        Dockerfile: '**/Dockerfile'
         
 - stage: Push
   displayName: Push image
